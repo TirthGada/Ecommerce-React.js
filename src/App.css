@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+
+.btn-primary:hover {
+  color: #251907;
+  background-color: #bfee04;
+  border-color: #5b288e;
+}
+
+
+.card:hover{
+
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  color: #251907;
+}
+.sticky-bottom{
+  color:#61dafb;
+  background-color: #bfee04;
+}
