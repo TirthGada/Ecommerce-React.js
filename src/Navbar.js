@@ -21,22 +21,24 @@ export default function Navbar(props) {
         </li>
       </ul>
 
-    
-        <button class="btn btn-outline-info px-4" type="submit">
+        <button class="btn btn-outline-info px-3" type="submit">
           
             <div className='container mx-2 px-2'>    
-     <div className='container mx-1'></div>
+     <div className='container mx-2'></div>
        Cart Rs {props.Totalprice}</div>
         </button>
        
         <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle mx-3 px-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <button class="btn btn-secondary dropdown-toggle  mx-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     Items in Cart {props.sum}
   </button>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">{props.alpha}</a></li>
-    <li><a class="dropdown-item" href="#">{props.beta}</a></li>
-    <li><a class="dropdown-item" href="#">{props.gamma}</a></li>
+    <li><a class="dropdown-item" href="#">{props.alpha} X Fresh Onion</a></li>
+    <li><a class="dropdown-item" href="#">{props.beta} X Madhur Sugar</a></li>
+    <li><a class="dropdown-item" href="#">{props.gamma} X Gowardhan Ghee</a></li>
+    <li><a class="dropdown-item" href="#">{props.delta} X Atta </a></li>
+    <li><a class="dropdown-item" href="#">{props.crata} X Banana chips</a></li>
+    <li><a class="dropdown-item" href="#">{props.haha} X Oats</a></li>
   </ul>
 </div>
 

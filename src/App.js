@@ -5,7 +5,6 @@ import Footer from './Footer';
 import React,{useState} from 'react';
 import Itemlist from './Itemlist';
 
-
 function App() {
 
   const[Totalprice,setTotalprice]=useState(0);
@@ -23,44 +22,61 @@ function App() {
   const[Qty6,setQty6]=useState(1);
 
 
-const[TotItems,setTotItems]=useState(Qty1+Qty2+Qty3+Qty4+Qty5+Qty6-6);
+  const[N1,setN1]=useState(0);
+
+  const[N2,setN2]=useState(0);
+
+  const[N3,setN3]=useState(0);
+
+  const[N4,setN4]=useState(0);
+
+  const[N5,setN5]=useState(0);
+
+  const[N6,setN6]=useState(0);
 
 
-  const[SelQty1,setSelQty1]=useState(1);
+const[TotItems,setTotItems]=useState(0);
+
   const handleonclick1=()=>{
   
  setTotalprice(Totalprice+39);
  setQty1(Qty1+1);
+ setN1(N1+1);
  setTotItems(TotItems+1);
   }
 
   const handleonclick2=()=>{
     setTotalprice(Totalprice+59);
     setQty2(Qty2+1);
+ setN2(N2+1);
  setTotItems(TotItems+1);
      }
 
   const handleonclick3=()=>{
     setTotalprice(Totalprice+679);
     setQty3(Qty3+1);
+setN3(N3+1);
  setTotItems(TotItems+1);
      }
 
   const handleonclick4=()=>{
     setTotalprice(Totalprice+19);
     setQty4(Qty4+1);
+    setN4(N4+1);
  setTotItems(TotItems+1);
      }
 
   const handleonclick5=()=>{
     setTotalprice(Totalprice+69);
     setQty5(Qty5+1);
+    setN5(N5+1);
  setTotItems(TotItems+1);
      }
 
   const handleonclick6=()=>{
     setTotalprice(Totalprice+9);
     setQty6(Qty6+1);
+    setN6(N6+1);
  setTotItems(TotItems+1);
      }
   
@@ -68,6 +84,7 @@ const[TotItems,setTotItems]=useState(Qty1+Qty2+Qty3+Qty4+Qty5+Qty6-6);
     if(Qty1>1){
     setTotalprice(Totalprice-39);
     setQty1(Qty1-1);
+ setN1(N1-1);
  setTotItems(TotItems-1);
     }
   }
@@ -76,6 +93,7 @@ const[TotItems,setTotItems]=useState(Qty1+Qty2+Qty3+Qty4+Qty5+Qty6-6);
     if(Qty2>1){
     setTotalprice(Totalprice-59);
     setQty2(Qty2-1);
+setN2(N2-1);
  setTotItems(TotItems-1);
   }
 }
@@ -84,6 +102,7 @@ const[TotItems,setTotItems]=useState(Qty1+Qty2+Qty3+Qty4+Qty5+Qty6-6);
     if(Qty3>1){
     setTotalprice(Totalprice-679);
     setQty3(Qty3-1);
+    setN3(N3-1);
     setTotItems(TotItems-1);
     }
   }
@@ -92,6 +111,7 @@ const[TotItems,setTotItems]=useState(Qty1+Qty2+Qty3+Qty4+Qty5+Qty6-6);
     if(Qty4>1){
     setTotalprice(Totalprice-19);
     setQty4(Qty4-1);
+    setN4(N4-1);
     setTotItems(TotItems-1);
     }
   }
@@ -100,6 +120,7 @@ const[TotItems,setTotItems]=useState(Qty1+Qty2+Qty3+Qty4+Qty5+Qty6-6);
     if(Qty5>1){
     setTotalprice(Totalprice-69);
     setQty5(Qty5-1);
+    setN5(N5-1);
     setTotItems(TotItems-1);
     }
   }
@@ -108,14 +129,15 @@ const[TotItems,setTotItems]=useState(Qty1+Qty2+Qty3+Qty4+Qty5+Qty6-6);
     if(Qty6>1){
     setTotalprice(Totalprice-9);
     setQty6(Qty6-1);
+    setN6(N6-1);
     setTotItems(TotItems-1);
   }
 } 
 
-  return (
+return (
 <>
-<Navbar Totalprice={Totalprice} sum={TotItems}/>
-<Itemlist/>
+<Navbar Totalprice={Totalprice} sum={TotItems} alpha={N1} beta={N2} gamma={N3} delta={N4} crata={N5} haha={N6} />
+
 <center >
     <div className='container py-3'>
         <div className="row">

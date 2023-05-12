@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-
+import App from './App'
 export default function Item(props) {
  
   return (
@@ -11,18 +11,10 @@ export default function Item(props) {
     <h5 class="card-title">{props.title}</h5>
  
 <a href="#" class="btn btn-info mx-2" >Rs {props.price}</a>
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle my-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Qty 1
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">1</a></li>
-    <li><a class="dropdown-item" href="#">2</a></li>
-    <li><a class="dropdown-item" href="#">3</a></li>
-  </ul>
+    </div>
 </div>
   </div>
-</div>
-    </div>
+
+   
   )
 }
